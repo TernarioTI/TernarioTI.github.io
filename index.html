@@ -100,6 +100,9 @@
         .hero-status { display: inline-flex; align-items: center; gap: .55rem; padding: .55rem 1rem; border-radius: 999px;
             background: #fff; color: #212529; font-size: .8rem; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
         .hero-status .ponto { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+        /* Status offline: vermelho (o bg-danger do site agora é laranja) */
+        #status-dot.bg-danger { background-color: #b40d1a !important; }
+        [data-bs-theme="dark"] #status-dot.bg-danger { background-color: #d92532 !important; }
         .hero h2 { font-size: clamp(2rem, 4.6vw, 3.2rem); font-weight: 800; line-height: 1.15; letter-spacing: -.5px; }
         .hero-chip { display: inline-flex; align-items: center; gap: .5rem; padding: .55rem 1rem; border-radius: 999px;
             background: #fff; color: #212529; font-size: .82rem; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
@@ -707,7 +710,7 @@
             </button>
         </div>
 
-        <div class="rounded-4 bg-danger text-light text-center p-4">
+        <div class="rounded-4 bg-danger text-dark text-center p-4">
             <p class="fs-3 fw-bold mb-1">Melhore a performance do seu computador</p>
             <p class="mb-3">Entre em contato agora mesmo para solicitar um orçamento</p>
             <a href="https://api.whatsapp.com/send?phone=5513998059374" class="btn btn-light px-5 fw-bold text-primary"><i class="bi bi-whatsapp"></i> &nbsp; Solicitar Orçamento</a>
