@@ -1,1 +1,1 @@
-# InsoTec
+# TernárioTI
